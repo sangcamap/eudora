@@ -1,0 +1,32 @@
+.navigation{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 24rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    ul{
+        font-family: 'Playfair Display', serif;
+        list-style: none;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        
+        li{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            margin-left: 5rem;
+            color: $cl-1;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        .brand{
+            color: $cl-4;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-size: 4rem;
+            text-transform: none;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.primary-category{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &__heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2{
+            @include italic-heading;
+            color: $cl-3;
+            font-size: 4rem;
+            margin: 4rem 0;
+        }
+        p{
+            color: $cl-2;
+            font-size: 2rem;
+            width: 75rem;
+            line-height: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__group-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        button{
+            margin-left: 5rem;
+            width: 18rem;
+            color: $cl-3;
+            background: transparent;
+            font-size: 2rem;
+            padding: 1.4rem 2.4rem;
+            border: 1px solid $cl-2;
+            &:nth-child(2){
+                background-color: $cl-4;
+                color: $cl-1;
+                border: 0;
+            }
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        &-card{
+            margin-left: 4rem;
+            width: 30rem;
+            height: 70rem;
+            img{
+                width: 28rem;
+                height: 28rem;
+            }
+            .card__info{
+                display: none;
+            }
+            .active{
+                img{
+                    width: 30rem;
+                    height: 30rem;
+                }
+                display: block;
+                text-align: center;
+                line-height: 4rem;
+                h3{
+                    font-family: 'Playfair Display', serif;
+                    color: $cl-4;
+                    font-size: 6rem;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+                h5{
+                    margin-top: 3rem;
+                    color: $cl-5;
+                    font-size: 2.2rem;
+                }
+                p{
+                    color: $cl-2;
+                    font-size: 1.6rem;
+                }
+            }
+            button{
+                text-transform: uppercase;
+                font-size: 2rem;
+                width: 20rem;
+                padding: 1.4rem 2.4rem;
+                color: $cl-3;
+                display: block;
+                margin: 0 auto;
+                background: transparent;
+                border: 1px solid $cl-2;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
