@@ -1,0 +1,23 @@
+.banner{
+    position: relative;
+    margin-top: 20rem;
+    display: grid;
+    height: auto;
+    &--left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 / 2;
+        background-color: $cl-4;
+        padding: 8rem;
+        h4{
+            width: 30rem;        
+            @include italic-heading;
+            color: $cl-1;
+            font-size: 5rem;
+        }
+    }
+    &--right{
+        grid-column: 2 / 4;
+    }
+}

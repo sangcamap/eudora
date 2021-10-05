@@ -1,0 +1,63 @@
+.secondary-category{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    &__heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2{
+            @include italic-heading;
+            color: $cl-3;
+            font-size: 4rem;
+            margin: 4rem 0;
+        }
+        p{
+            color: $cl-2;
+            font-size: 2rem;
+            width: 75rem;
+            line-height: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__menu{
+        justify-content: space-around;
+        img{
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+        }
+        display: grid;
+        grid-template-columns: auto auto auto;
+        &-card{
+            margin: 2rem;
+            text-align: center;
+            width: 30rem;
+            height: 40rem;
+        }
+        button{
+            text-transform: uppercase;
+            font-size: 2rem;
+            width: 20rem;
+            padding: 1.4rem 2.4rem;
+            color: $cl-3;
+            display: block;
+            margin: 0 auto;
+            background: transparent;
+            border: 1px solid $cl-2;
+            margin-top: 2rem;
+        }
+        h5{
+            margin-top: 2rem;
+            color: $cl-3;
+            font-size: 2.2rem;
+        }
+        p{
+            line-height: 4rem;
+            color: $cl-2;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+}

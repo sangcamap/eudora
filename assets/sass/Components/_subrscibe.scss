@@ -1,0 +1,57 @@
+.subrscibe{
+    position: relative;
+    height: 40vh;
+    margin-top: 30rem;
+    background: url('../images/bg-3.png') center /cover;
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $cl-1;
+        h4{
+            @include italic-heading;
+            margin-bottom: 2rem;
+        }
+        .container{
+            width: 40rem;
+            height: 3.4rem;
+            position: relative;
+            background: transparent;
+            margin-bottom: 2rem;
+            label{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: $cl-1;
+            }
+            input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 1px solid $cl-2;
+                padding: 1rem;
+                background: transparent;
+                color: $cl-1;
+            }
+        }
+        button{
+            text-transform: uppercase;
+            font-size: 2rem;
+            width: 20rem;
+            padding: 1.4rem 2.4rem;
+            color: $cl-1;
+            display: block;
+            margin: 0 auto;
+            background: transparent;
+            background: $cl-4;
+            margin-top: 2rem;
+        }
+    }
+}
