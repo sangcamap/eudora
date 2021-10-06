@@ -80,14 +80,17 @@ img {
 
 .wrapper {
   max-width: 1920px;
+  margin: 0 auto;
+  font-size: 62.5%;
 }
 
 .navigation {
   position: fixed;
   z-index: 99;
   width: 100%;
-  height: 24rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 1920px;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +131,8 @@ img {
 
 .header {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/bg.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/bg.png) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg.png) no-repeat center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -251,14 +254,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 5rem;
 }
 
 .primary-category__menu-card {
-  margin-left: 4rem;
+  margin-left: 1rem;
   width: 30rem;
   height: 70rem;
 }
